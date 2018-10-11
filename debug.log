@@ -1,0 +1,11 @@
+[0611/155719.533:ERROR:exception_handler_server.cc(526)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0611/155721.811:ERROR:exception_handler_server.cc(526)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0613/093030.774:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0613/093205.880:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0613/094754.792:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0613/114526.310:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports
+[0614/124634.377:ERROR:exception_handler_server.cc(526)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0614/124636.795:ERROR:exception_handler_server.cc(526)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0614/124637.341:ERROR:exception_handler_server.cc(526)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0614/124638.838:ERROR:exception_handler_server.cc(526)] ConnectNamedPipe: 管道正在被关闭。 (0xE8)
+[0614/131351.116:ERROR:prune_crash_reports.cc(34)] PruneCrashReportDatabase: Failed to get pending reports

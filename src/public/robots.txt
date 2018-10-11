@@ -1,0 +1,10 @@
+user-agent: * Allow: /
+Allow: /archives/
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+Sitemap: https://topcoderwuxie.github.io/sitemap.xml
+Sitemap: https://topcoderwuxie.github.io/baidusitemap.xml

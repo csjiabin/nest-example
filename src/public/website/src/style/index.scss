@@ -1,0 +1,73 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.loading-mask {
+  background-color: transparent;
+}
+.pull-left{
+  float: left
+}
+.pull-right{
+  float: right
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.hljs{
+  word-wrap: break-word;
+  word-break: normal;
+  white-space: pre-wrap;
+}
+.router-view {
+  width: 100%;
+}
+.back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+}
+.md-card{
+  z-index: auto;
+}
+.pop-out-enter-active,
+.pop-out-leave-active,
+.pop-in-enter-active,
+.pop-in-leave-active {
+  /*will-change: transform;*/
+  transition: all 0.3s;
+  position: absolute;
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+.pop-out-enter {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+.pop-out-leave-active {
+  opacity: 0;
+  transform: translate3d(-50%, 0, 0);
+}
+.pop-in-enter {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+.pop-in-leave-active {
+  opacity: 0;
+  transform: translate3d(50%, 0, 0);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity ease .5s;
+}
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+{
+  opacity: 0;
+}

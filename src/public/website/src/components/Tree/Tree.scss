@@ -1,0 +1,111 @@
+.tree {
+  cursor: default;
+  background: #fff;
+  color: #5a5e66;
+  &__empty-block {
+    position: relative;
+    min-height: 60px;
+    text-align: center;
+    width: 100%;
+    height: 100%
+  }
+}
+
+.tree-node {
+  white-space: nowrap;
+  outline: none;
+  &:focus>&__content {
+    background-color: #f5f7fa
+  }
+  &__content {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 32px;
+    cursor: pointer;
+    :hover {
+      background-color: transparent
+    }
+  }
+  &__content>&__expand-icon {
+    padding: 6px
+  }
+  &__expand-icon {
+    margin-right: 8px;
+    cursor: pointer;
+    color: #b4bccc;
+    font-size: 12px;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.25, .8, .25, 1);
+    transition: -webkit-transform .4s cubic-bezier(.25, .8, .25, 1);
+    transition: transform .4s cubic-bezier(.25, .8, .25, 1);
+    transition: transform .4s cubic-bezier(.25, .8, .25, 1), -webkit-transform .4s cubic-bezier(.25, .8, .25, 1);
+    &.expanded {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg)
+    }
+    &.md-icon.is-leaf {
+      color: transparent;
+      cursor: default
+    }
+  }
+  &__label {
+    font-size: 14px
+  }
+  &__loading-icon {
+    margin-right: 8px;
+    font-size: 14px;
+    color: #b4bccc
+  }
+  &>.tree-node__children {
+    overflow: hidden;
+    background-color: transparent
+  }
+  &.is-expanded>&__children {
+    display: block
+  }
+  .md-button {
+    width: 100%;
+    margin: 0;
+    &.is-current {
+      background-color: #f0f7ff
+    }
+    .md-ripple {
+      justify-content: start
+    }
+  }
+  .md-checkbox .md-checkbox-container {
+    &::before {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .md-checkbox.indeterminate {
+    & .md-checkbox-container {
+      position: relative;
+      background-color: #448aff;
+      border-color: #448aff;
+      &::before {
+        width: 32px;
+        height: 32px;
+      }
+      &::after {
+        display: block;
+        background-color: #fff;
+        height: 2px;
+        width: 14px;
+        position: absolute;
+        left: 1px;
+        right: 0;
+        top: 7px;
+        opacity: 1;
+        z-index: 6;
+        transform: rotate(0) scale3D(1, 1, 1);
+        transition: .2s cubic-bezier(.25, .8, .25, 1);
+      }
+    }
+  }
+}
+

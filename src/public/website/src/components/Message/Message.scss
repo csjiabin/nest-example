@@ -1,0 +1,119 @@
+.fow-message {
+  min-width: 380px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #e6ebf5;
+  position: fixed;
+  left: 50%;
+  top: 20px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #edf2fc;
+  -webkit-transition: opacity .3s, -webkit-transform .4s;
+  transition: opacity .3s, -webkit-transform .4s;
+  transition: opacity .3s, transform .4s;
+  transition: opacity .3s, transform .4s, -webkit-transform .4s;
+  overflow: hidden;
+  padding: 15px 15px 15px 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center
+}
+
+.fow-message.is-center {
+  -webkit-box-pack: center;
+  justify-content: center
+}
+
+.fow-message p {
+  margin: 0
+}
+
+.fow-message--info .fow-message__content {
+  color: #878d99
+}
+
+.fow-message--success {
+  background-color: #f0f9eb;
+  border-color: #e1f3d8
+}
+
+.fow-message--success .fow-message__content {
+  color: #67c23a
+}
+
+.fow-message--warning {
+  background-color: oldlace;
+  border-color: #fbeccd
+}
+
+.fow-message--warning .fow-message__content {
+  color: #eb9e05
+}
+
+.fow-message--error {
+  background-color: #fee;
+  border-color: #fedddd
+}
+
+.fow-message--error .fow-message__content {
+  color: #fa5555
+}
+
+.fow-message__icon {
+  margin-right: 10px
+}
+
+.fow-message__content {
+  padding: 0;
+  font-size: 14px;
+  line-height: 1
+}
+
+.fow-message__content:focus {
+  outline-width: 0
+}
+
+.fow-message__closeBtn {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #b4bccc;
+  font-size: 16px
+}
+
+.fow-message__closeBtn:focus {
+  outline-width: 0
+}
+
+.fow-message__closeBtn:hover {
+  color: #878d99
+}
+
+.fow-message .fow-icon-success {
+  color: #67c23a
+}
+
+.fow-message .fow-icon-error {
+  color: #fa5555
+}
+
+.fow-message .fow-icon-info {
+  color: #878d99
+}
+
+.fow-message .fow-icon-warning {
+  color: #eb9e05
+}
+
+.fow-message-fade-enter,
+.fow-message-fade-leave-active {
+  opacity: 0;
+  -webkit-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%)
+}

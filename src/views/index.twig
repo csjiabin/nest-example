@@ -1,0 +1,79 @@
+{% extends 'layout/base.twig' %}
+{% block content %}
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+            <div>
+
+                <body>
+
+                    <a href="#" target="_blank" class="mail">laike@qq.com</a>
+                    <br>
+
+                    <a href="#" target="_blank" class="mail">laike@gmail.com</a>
+                    <br>
+
+                    <a href="#" target="_blank" class="mail">laike@sina.com</a>
+                    <br>
+
+                    <a href="#" target="_blank" class="mail">laike@163.com</a>
+                    <br>
+
+                    <a href="#" target="_blank" class="mail">laike@souhu.com</a>
+                    <br>
+
+                    <a href="#" target="_blank" class="mail">laike@hotmail.com</a>
+
+                </body>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        var hash = {
+            'qq.com': 'https://mail.qq.com',
+            'gmail.com': 'https://mail.google.com',
+            'sina.com': 'https://mail.sina.com.cn',
+            '163.com': 'https://mail.163.com',
+            '126.com': 'https://mail.126.com',
+            'yeah.net': 'https://www.yeah.net/',
+            'sohu.com': 'https://mail.sohu.com/',
+            'tom.com': 'https://mail.tom.com/',
+            'sogou.com': 'https://mail.sogou.com/',
+            '139.com': 'https://mail.10086.cn/',
+            'hotmail.com': 'https://www.hotmail.com',
+            'live.com': 'https://login.live.com/',
+            'live.cn': 'https://login.live.cn/',
+            'live.com.cn': 'https://login.live.com.cn',
+            '189.com': 'https://webmail16.189.cn/webmail/',
+            'yahoo.com.cn': 'https://mail.cn.yahoo.com/',
+            'yahoo.cn': 'https://mail.cn.yahoo.com/',
+            'eyou.com': 'https://www.eyou.com/',
+            '21cn.com': 'https://mail.21cn.com/',
+            '188.com': 'https://www.188.com/',
+            'foxmail.coom': 'https://www.foxmail.com'
+        };
+        $(function () {
+            $(".mail").each(function () {
+                var url = $(this).text().split('@')[1];
+                for (var j in hash) {
+                    $(this).attr("href", hash[url]);
+                }
+            });
+        })
+    </script>
+{% endblock %}

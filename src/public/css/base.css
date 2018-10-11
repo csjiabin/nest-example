@@ -1,0 +1,25 @@
+html,body{
+  background-color:#f7f7f7;
+}
+div.header ul{
+  height: 60px;
+  line-height: 60px;
+  align-items: center;
+}
+ul.nav li{
+}
+ul.nav a.nav-link{
+    /* padding:0.1 0.4rem;
+    border-radius:0.1rem;
+     */
+     line-height:1;
+}
+div.card {
+  border: transparent
+}
+div.line{
+  width: 96%;
+  height: 1px;
+  background-color: rgba(0,0,0,.125);
+  margin: auto;
+}

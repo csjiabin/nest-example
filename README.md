@@ -2,7 +2,7 @@
 
 ## Description
 
-使用nest高并发后段框架和vue前款分离开发个人网站
+使用nest高并发后端框架和vue前后端分离开发个人网站
 
 ## Installation
 
